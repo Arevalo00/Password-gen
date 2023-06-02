@@ -1,8 +1,8 @@
 // Assignment code here
-var number = "1 2 3 4 5 6 7 8 9 0"
-var specialLetters = " $ #  %  @  *  &";
-var upperCase = " A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
-var lowerCase = " a b c d e f g h i j k l m n o p q r s t u v w x y z"
+var number = "1234567890"
+var specialLetters = "$#%@*&";
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var lowerCase = "abcdefghijklmnopqrstuvwxyz"
 
 var superString = ""
 // Get references to the #generate element
@@ -17,12 +17,6 @@ do {
   console.log ("password length,", passwordLength);
 }
 while (passwordLength< 8 || passwordLength > 128);
-
-
-
-//while (passwordLength< 8 || passwordLength > 128);
-//if (passwordLength<128 || passwordLength > 8 )
-//alert("Your password can only be 8-128 long")
 
 
 var confrimNumber = confirm ("do you want any numbers?")
