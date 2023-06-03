@@ -1,7 +1,9 @@
 # Password Generator Starter Code
 
 
-When working on this project we are learning how to create a pass word generator. I found this homework hard, as I have never used javascript. So when I started this project I frist went to the consoul log and it told me that the password generator was undfined. With that clue I was able to pin point what line in javascript to start my work. Then I used a consal log to let me know that the button was being clicked. Then I used the retun to put "password gose here" to see if it would be put in the password box, and it worked. After that I moved on to the readme and read it super careful, and wrote out all the things I needed for my password. Then I made Var's for all things in the readme, that way I could use them in my funtion. After that I made a prompt asking the user how many letters they wanted to use in there password. 
+When working on this project we are learning how to create a password generator. I found this homework hard, as I have never used javascript. So when I started this project I frist went to the consoul log and it told me that the password generator was undfined. With that clue I was able to pin point what line in javascript to start my work. Then I used a consal log to let me know that the button was being clicked. Then I used the retun to put "password gose here" to see if it would be put in the password box, and it worked. After that I moved on to the readme and read it super careful, and wrote out all the things I needed for my password. Then I made Var's for all things in the readme, that way I could use them in my funtion. After that I made a prompt asking the user how many letters they wanted to use in there password. 
+
+
 Once all this was done I thought it would be good to write persudo code to help me outline my thoughts on how I was going to do all the task I need to do. 
 
 # Persudo Code 
@@ -15,6 +17,8 @@ Once all this was done I thought it would be good to write persudo code to help 
 4.then the info needs to be validated so it can output the password 
 
 5.after that the password will be retuned in the password box 
+
+After the persudo code I went about creating my Supersring which is empty, this was helpful because I was able to just add the things I need and it can flow thought my code. After this was complete I moved to getting the password length working I did this with logical operators. The final part was getting the password to become random. I did this with a Four loop and the math random and floor. once this was done we created a new var for the password genorated. 
 
 
 
@@ -41,3 +45,5 @@ WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
+
+!["Here is my Screen Shot"](https://file%2B.vscode-resource.vscode-cdn.net/Users/jenniferarevalo/passWord-gen/assets/Screen%20Shot%202023-06-02%20at%209.55.40%20PM.png?version%3D1685761318350)

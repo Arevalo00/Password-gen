@@ -5,28 +5,32 @@ var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var lowerCase = "abcdefghijklmnopqrstuvwxyz"
 
 var superString = ""
+
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 function generatePassword (){
 
-  console.log("the button was clicked");
+  console.log("The button was clicked");
 var passwordLength= 0
-
+//password length 
 do {
-   passwordLength = prompt("How many letters will the password have?");
+   passwordLength = prompt("How long do you want your password to be?");
   console.log ("password length,", passwordLength);
 }
 while (passwordLength< 8 || passwordLength > 128);
 
 
-var confrimNumber = confirm ("do you want any numbers?")
+//number 
+var confrimNumber = confirm ("Would you like any numbers in your password?")
 console.log("true", confrimNumber)
 if (confrimNumber===true){
   superString += number
   console.log (superString)
 }
 
-var confirmSpeacial = confirm ("Do you want any specail letters?");
+//special characters 
+var confirmSpeacial = confirm ("Do you want any special characters?");
 console.log ("confrim speacial letters",confirmSpeacial)
 if (confirmSpeacial===true) {
 console.log ("its true")
@@ -34,7 +38,8 @@ superString += specialLetters
 console.log (superString)
 }
 
-var confrimUppercase = confirm ("do you want any upper case letters?")
+//Upper case
+var confrimUppercase = confirm ("Do you want any upper case letters?")
 console.log("confrim Upper case letters",confrimUppercase)
 if(confrimUppercase===true){
 console.log("it worked")
@@ -42,8 +47,8 @@ superString += upperCase
 console.log (superString)
 }
 
-
-var confrimLowercase = confirm ("do you want any lower case letters")
+//Lower case 
+var confrimLowercase = confirm ("Do you want any lower case letters")
 console.log ("confrim lowercase letters",confrimLowercase)
 if (confrimLowercase===true){
   console.log("yay it worked")
@@ -54,17 +59,19 @@ if (confrimLowercase===true){
 //4loop consal log password length 
 var generatedPassword = ""
 for (var i = 0, len = passwordLength, text = ""; i < len; i++) {
-  var random = Math.floor(Math.random()* superString.length);  //get random number that is less that the super string 
+  var random = Math.floor(Math.random()* superString.length);   
 
   generatedPassword += superString[random] 
   console.log("the number the user put")
 
- 
+  
 }
 
 console.log (generatedPassword)
 
 return (generatedPassword);
+
+
 }
 // Write password to the #password input
 function writePassword() {
